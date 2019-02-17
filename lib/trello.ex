@@ -26,6 +26,9 @@ defmodule Trello do
   def delete(url, secret), do: Http.delete(create_url(url, secret)) |> unwrap_http
   def delete!(url, secret), do: Http.delete!(create_url(url, secret)) |> unwrap_http
 
+  def get_card(card_id, secret), do: get("/cards/#{card_id}", secret)
+  def get_card!(card_id, secret), do: get("/cards/#{card_id}", secret)
+
   def get_board(board_id, secret), do: get "/boards/#{board_id}", secret
   def get_board!(board_id, secret), do: get! "/boards/#{board_id}", secret
 
