@@ -32,7 +32,7 @@ defmodule Trello.Mixfile do
     [
       {:httpoison, ">= 0.8.2"},
       {:poison, ">= 1.5.0"},
-      {:ex_doc, "~> 0.18.0", only: :dev}
+      {:ex_doc, "~> 0.19.3", only: :dev}
     ]
   end
 
